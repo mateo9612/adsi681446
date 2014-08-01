@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CANVAS html5</title>
+</head>
+<body>
+    <h2>Cuadrado</h2>
+	<canvas id="cuadrado"></canvas>
+    <h2>Circulo</h2>	
+	<canvas id="circulo"></canvas>
+	<h2>Triangulo</h2>
+	<canvas id="triangulo"></canvas>
+	<h2>Texto</h2>
+	<canvas id="texto"></canvas>
+	<h2>Corazon</h2>
+	<canvas id="corazon"></canvas>
+	<script>
+	var canvas = document.getElementById("cuadrado");
+	var cntx = canvas.getContext("2d");
+	cntx.fillStyle = "#f00";
+	cntx.fillRect(0,0,100,100);
+	</script>
+	<script>
+	var canvas = document.getElementById("circulo");
+	var cxt = canvas.getContext("2d");
+	cxt.fillStyle = "#f00";
+	cxt.beginPath();
+    cxt.arc(60,60,50,0,Math.PI*2,true);
+    cxt.closePath();
+    cxt.fill();
+	</script>
+	<script>
+    var canvas = document.getElementById("triangulo");
+    var ctx = canvas.getContext("2d");
+   ctx.fillStyle="#f00";
+   ctx.beginPath();
+   ctx.moveTo(10,110);
+   ctx.lineTo(70,10);
+   ctx.lineTo(135,110);
+   ctx.closePath();
+   ctx.fill();
+</script>
+<script>
+	var canvas= document.getElementById("texto");
+	var ctx= canvas.getContext("2d");
+    ctx.fillStyle= "#f00";
+    ctx.font= "60px Verdana";
+    ctx.fillText("ADSI",20,80);
+    ctx.rect(0,0,200,120);
+    ctx.stroke();
+</script>
+<script>
+	var canvas = document.getElementById("corazon");
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle="#f00";
+    ctx.beginPath();
+    ctx.moveTo(75,40);
+    ctx.bezierCurveTo(75,37,70,25,50,25);
+    ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
+    ctx.bezierCurveTo(20,80,40,102,75,120);
+    ctx.bezierCurveTo(110,102,130,80,130,62.5);
+    ctx.bezierCurveTo(130,62.5,130,25,100,25);
+    ctx.bezierCurveTo(85,25,75,37,75,40);
+    ctx.fill();
+</script>
+</body>
+</html>

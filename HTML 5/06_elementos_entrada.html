@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Elmentos de Entrada html5</title>
+</head>
+<body>
+	<h1>Nuevos Elmentos de Entrada html5</h1>
+	<form method="get" oninput="salida.value=parseInt(base.value)*parseInt(altura.value)">
+		<!--|||||||||||||||||||||||||||||||||||||-->
+    <fieldset>
+    	<legend>Lista de Datos</legend>
+    	<input list="lenguajes">
+    	<datalist id="lenguajes">
+    		<option value="C++">C++</option>
+    		<option value="Java">Java</option>
+    		<option value="PHP">PHP</option>
+    		<option value="C#">C#</option>
+    		<option value="Python">Python</option>
+    	</datalist>
+    	<br>
+    	<input type="submit" value="Enviar Formulario">
+    	<!--||||||||||||||||||||||||||||||||||||-->
+    	<fieldset>
+    		<legend>Generador de Claves</legend>
+    		<keygen name="clave">
+    	</fieldset>
+    	<!--||||||||||||||||||||||||||||||||||||-->
+    	<fieldset>
+    		<legend>Salida</legend>
+    		<label for="base"><strong>Base:</strong></label>
+    		<input type="range" id="base" min="1" max="100">
+    	    <label for="altura"><strong>Altura:</strong></label>
+    		<input type="range" id="altura" min="1" max="100">
+    		<label for="salida"><strong>El area es:</strong></label>
+    		<output id="salida" for=""></output>
+    	</fieldset>
+    </fieldset>
+	</form>
+</body>
+</html>

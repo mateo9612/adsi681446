@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ATRIBUTOS INPUT html5</title>
+</head>
+<body>
+	<h1>Autocomplete</h1>
+	<form>
+   Dato1: <input type="text" name="name1" autocomplete="off">
+   Dato2: <input type="text" name="name2" autocomplete>
+   Dato3: <input type="text" name="name3">
+   <input type="submit" value="enviar">
+</form>
+<h1>Autofocus</h1>
+<form>
+  <label for="nombre">¿Cómo te llamas?</label>
+  <input id="nombre" type="text" autofocus/>
+  <label for="edad">¿Cuántos años tienes?</label>
+  <input id="edad" type="text"/>
+</form>
+<h1>Form</h1>
+<form id="form1">
+  Nombre: <input type="text" name="nombre"><br>
+Apellido: <input type="text" name="apellido" form="form1">
+<input type="submit" value="Enviar">
+</form>
+<h1>Formaction</h1>
+<form>
+  Nombre: <input type="text" name="nombre"><br>
+  Apellido: <input type="text" name="apellido"><br>
+  <input type="submit" value="Enviar"><br>
+  <input type="submit" formaction="http://www.google.com" formmethod="post"
+  value="Enviar al administrador">
+</form>
+<h1>Formenctype</h1>
+<form method="post">
+  Nombre: <input type="text" name="nombre"><br>
+  <input type="submit" value="Enviar">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Enviar multipart/form-data ">
+</form>
+<h1>Formmethod</h1>
+<form method="get">
+  Nombre: <input type="text" name="nombre"><br>
+  Apellido: <input type="text" name="apellido"><br>
+  <input type="submit" value="Enviar">
+  <input type="submit" formmethod="post" formaction="http://www.google.com"
+  value="Enviar usando post">
+</form>
+<h1>Formnovalidate</h1>
+<form>
+  E-mail: <input type="email" name="userid" required><br>
+  <input type="submit" value="Enviar"><br>
+  <input type="submit" formnovalidate value="Enviar validacion">
+</form>
+<h1>Formtarget</h1>
+<form>
+  Nombre: <input type="text" name="nombre"><br>
+  Apellido: <input type="text" name="apellido"><br>
+  <input type="submit" value="Enviar normal">
+  <input type="submit" formtarget="_blank"
+  value="Enviar a nueva ventana">
+</form>
+<h1>Height/Width</h1>
+<input type="image" src="imgs/dota2.png" alt="Submit" width="48" height="48">
+<h1>List</h1>
+Redes Sociales:<input list="browsers">
+<datalist id="browsers">
+  <option value="Facebook">
+  <option value="Twitter">
+  <option value="Tumblr">
+  <option value="Hi5">
+  <option value="Instagram">
+</datalist>
+<h1>Min/Max</h1>
+Entrar antes de 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Entrar despues de 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+cantidad ( 1 a 5):
+<input type="number" name="quantity" min="1" max="5">
+<h1>Multiple</h1>
+seleccione imagen: <input type="file" name="img" multiple>
+<h1>Placeholder</h1>
+<input type="text" name="nombre" placeholder="nombre">
+<h1>Required</h1>
+<form>
+Usuario: <input type="text" name="usuario" required>
+Contraseña: <input type="text" name="contraseña" required>
+<input type="submit" name="Enviar">
+</form>
+<h1>Step</h1>
+<input type="number" name="puntos" step="3">
+</body>
+</html>

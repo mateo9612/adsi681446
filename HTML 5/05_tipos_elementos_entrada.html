@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Tipos de Elementos de Entrada html5</title>
+</head>
+<body>
+	<h1>Nuevos Tipos de Elementos de Entrada html5</h1>
+	<form method="post">
+	<fieldset>
+		<legend>Color</legend>
+		<input type="color" id="pcolor" oninput="ocolor.value=this.value"/>
+		<output id="ocolor" for="pcolor"></output>
+	</fieldset>
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Fecha</legend>
+		<input type="date"/>
+	</fieldset>
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Correo Electronico</legend>
+		<input type="email"  required>
+	</fieldset>
+	<br>
+	<input type="submit" value="Enviar Formulario">
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Mes</legend>
+		<input type="month">
+	</fieldset>
+	<br>
+	<input type="submit"  value="Enviar Formulario">
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Numeros</legend>
+		<input type="number" min="0" max="100">
+	</fieldset>
+	<br>
+	<input type="submit" value="Enviar Formulario">
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Rango</legend>
+		<input type="range" min="0" max="50" step="5" id="rango" oninput="orango.value=this.value">
+		<output id="orango" for="rango"></output>
+	</fieldset>
+	<br>
+	<input type="submit" value="Enviar Formulario">
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Buscar</legend>
+		<input type="search">
+	</fieldset>
+	<br>
+	<input type="submit" value="Enviar Formulario">
+<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Tiempo</legend>
+		<input type="time">
+	</fieldset>
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>URL</legend>
+		<input type="url" required>
+	</fieldset>
+	<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<fieldset>
+		<legend>Semana</legend>
+		<input type="week">
+	</fieldset>
+	</form>
+</body>
+</html>
